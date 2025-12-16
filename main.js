@@ -472,6 +472,12 @@ height="300">
 
 
     -----> git add . 
-    để thêm lại
+    để thêm lại toàn bộ
+    
+    
+    -----> git add index.html 
+    để thêm file lẻ (gõ in + tab để chọn file gọi ý)
+
+
 
  */
