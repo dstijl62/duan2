@@ -480,4 +480,49 @@ height="300">
 
 
 
+
+
+
+
+
+    ////////////////////////////
+    //17. HTML ENTITIES
+    a. Tổng quan:
+    -> Là các chuối nằm trong cặp dấu &...;
+
+    <p>Chúng ta sử dụng thẻ &lt;h1&gt; để đặt tiêu đề:</p>
+    &lt;h1&gt; Đặt nội dung tiêu đề vào đây &lt;/h1&gt;
+
+    ----> gõ tìm kiếm html entities list
+
+    -> Sử dụng để nhặp các ký tự
+    1. Trùng thẻ, ký tự quy ước code HTML: <b>, <i>....
+    2. Các ký tự đặc biệt : 
+
+    <p>Các ký tự đặc biệt :</p>
+
+        <p>&copy;</p>	
+        <p>&yen;</p> 
+        <p>&para;</p>
+
+        <p>Δ</p>
+
+    -> Với trang web sử dụng bảng mã ký tự UTF-8 thì đa phần
+    các ký tự dặc biệt (bao gồm cả các biểu tượng cảm xúc)
+    có thể hiển thị ngay mà không cần sử dụng HTML Entities.
+
+///////////////////////
+//18. Tìm hiểu thẻ PRE
+-> Thẻ <pre> - preformatted: dùng để giữ nguyên định dạng 
+văn bản trong trình soản thảo code, ví dụ: khoảng trắng
+dư thừa, tab thụt vào đầu dòng...
+//
+<pre>
+  Đoạn     văn bản   đã được     định dạng trước 
+  ---->    k chỉnh sửa
+</pre>
+
+
+
+
  */
