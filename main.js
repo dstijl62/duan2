@@ -460,10 +460,18 @@ height="300">
     Step 4: Add thư mục dự án vào staging area chờ commit:
     --------> stagging area ( vùng chờ commit xác nhận)------>
 
-    /-> Add tất cả: ----> git add.
+    /-> Add tất cả: ----> git add . ---> enter
     /-> Add lẻ thư mục, tệp ----> git add ten_thu_muc
 
     git add thumuc/
     git add add1,html
+
+    ////////////
+    Trường hợp sau khi sửa đổi code
+    git status ---> Để kiểm tra status có sửa đổi gì hay k ?
+
+
+    -----> git add . 
+    để thêm lại
 
  */
