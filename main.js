@@ -523,6 +523,202 @@ dư thừa, tab thụt vào đầu dòng...
 </pre>
 
 
+///////////////////////
+//19. Tìm hiểu thẻ CODE
+-> Thẻ <code>: là 1 thẻ có ngữ nghĩa.
+-> sử dụng khi có 1 đoạn code, trình duyệt sẽ hiểu đây là
+1 đoạn code.
+
+   <p>Tôi đang học các thẻ <code> &lt; em &gt;</code>
+và <code>&lt; strong &gt;</code>
+</p>
+
+-> Thể hiện một khối code độc lập ( cần chuyển các ký tự đặc
+biệt sang HTML Entities)
+
+Không thụt thẻ code vào trong
+Dùng kèm thẻ pre để giữ định dạng khối code
+
+->>>>>>>> Để gõ nhanh các mã ký hiệu 
+vào trang codebeauty.org ----> search : html escape/unescape
+
+//////////////////////
+//20. Highlight code
+---> Thẻ <code> : Highlight code với thư viện PrismJS
+
+<!-- Step 1: Copy trước thẻ </head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+
+    <!-- Code sau khi highlight -->
+    <!-- Step 2: Thêm class="language-html" vào thẻ mở code -->
+
+
+ <!-- Step3: Thêm đoạn code sau trước thẻ đóng </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+    ///////////////////////
+    //21-1. HTML table
+    TR - TD - TH 
+    Thead, Tbody, Tfoot
+
+    ---> Sử dụng cặp thẻ <table> </table> để vẽ bảng
+
+    tr -- table row -- Đại diện cho 1 hàng trong bảng HTML
+    td -- table data  --- định nghĩa một ô dữ liệu trong 1 bảng
+    th -- table header -- định nghĩa một ô tiêu đề trong bảng
+
+////////////
+  
+
+<table>
+ <thead>
+    <tr>
+      <th>Tên sản phẩm</th>
+      <th>Giá</th>
+    </tr>
+ </thead>
+<tbody>
+    <tr>
+      <td>Áo phông</td>
+      <td>100k VND</td>
+    </tr>
+    <tr>
+      <td>Quần jeans</td>
+      <td>200k VND</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+      <td>Tổng cộng</td>
+      <td>300K VND</td>
+    </tr>
+  </table>
+</tfoot>
+
+/////////////
+21-2 HTML Table
+Colspan - Rowspan
+
+- Colspan --> chỉ định phần tử chiếm bao nhiêu cột
+- Rowspan --> Chỉ định phần tử chiếm bao nhiêu hàng
+
+<table>
+thead>tr>th*3
+  <thead>
+    <tr>
+      <th>Tên sản phẩm</th>
+      <th>Giá sản phẩm</th>
+      <th>Số lượng còn lại</th>
+    </tr>
+  </thead>
+
+  ////
+  tbody>tr*3>td*3
+
+  <tbody>
+    <tr>
+      <td>Áo thun nam</td>
+      <td>100.000vnd</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Quần jean nữ</td>
+      <td>200.000vnd</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Giày thể thao</td>
+      <td>300.000vnd</td>
+      <td>30</td>
+    </tr>
+ </tbody>\
+
+////////////
+ tfoot>tr>td*2
+
+ <tfoot>
+    <tr>
+      <td>Remark</td>
+      <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+    </tr>
+ </tfoot>
+
+
+ ////////////
+ //22. CSS Cơ Bản
+ INLINE - INTERNAL, EXTERNAL CSS
+
+2. Vị trí đặt CSS
+-> có 3 nơi có thể đặt CSS
+a. Inline - CSS nội tuyến
+<tag style="css" />
+
+- LÀ cách viết mã CSS ngay bên trong phần tử cơ bản HTML
+
+<h3 style="color:blueviolet">Inline - CSS nội tuyến</h3>
+
+-style là : name of attribute
+-"color:..." : value of attribute
+
+*** Nhược điểm
+1. Khó thay đổi, mỗi lần thay đổi phải thay đổi một cách riêng lẻ
+2. Không tái sử dụng được
+3. Khó quản lý
+4. Khó tách biệt cấu trúc
+
+
+b. Internal - CSS nội bộ
+<style>css</style>
+
+- Là cách viết mã CSS trong cặp thẻ style (đặt trong khối head)
+
+**Ưu điểm
+1. Code tách biệt với phần tử, có thể áp dụng với toàn trang
+(như ví dụ: ÁP dụng với toàn bộ thẻ h1)
+
+**Hạn chế: 
+1. Vẫn khó quản lý khi dự án lớn, quá nhiều mã CSS 
+sẽ làm tệp HTML trở nên cồng kềnh
+
+c. External - CSS bên ngoài
+<link href="style.css"/>
+
+- Trong trường hợp muốn áp dụng cho toàn bộ các file html nằm trên trang web,
+tránh việc phải copy css ra tất cả các file này.
+
+-> Là các viết mã CSS thành 1 tệp .css quản lý riêng
+
+-> Cần khai báo trong HTML để link đến tệp CSS
+
+   <!-- Khai báo link .css -->
+      <link rel="stylesheet" href="style.css">
+
+
+
+/////////////
+//22.3 DỘ ƯU TIÊN 
+Inline - Internal - External CSS
+
+---> Độ ưu tiên giữa 3 cách đặt CSS
+>Inline  > Internal 
+         > External
+Cao  >>>>>>>>>>>>>> Thấp
+
+Giữa Internal và External thì : Trong code HTML chính, phần khai báo của
+thằng nào viết sau thì sẽ ghi đèn lên thằng viết trước đó
+
+----> Người nào viết sau --> người đó định nghĩa
+
+
+
+
+
+
+
+
+
 
 
  */
